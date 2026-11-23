@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/serlah/public_html/serlah_solski_oglasnik
+    - /bin/cp -R * $DEPLOYPATH

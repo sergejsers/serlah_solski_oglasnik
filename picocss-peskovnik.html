@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pico.css Peskovnik</title>
+  <!-- VKLJUČEVANJE PICO.CSS: Ta ena vrstica vključi Pico.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+<style>
+        .container { max-width: 750px; border: 2px dashed #0172ad; padding: 20px; }
+  </style>
+
+</head>
+
+<body>
+  
+  <!-- UPORABA PICO.CSS container ELEMENTA: -->  
+  <!-- predpripravljen PICO.CSS container lepo sredinsko poravna stran -->
+  <main class="container">
+    <h1>Moj prvi preizkus Pico.css</h1>
+    <p>Ta stran uporablja samo navadne HTML značke brez lastnega CSS-ja.</p>
+
+    <!-- UPORABA PICO.CSS container: class="grid" za elemente v stolpcih -->
+    <div class="grid">
+      <input type="text" placeholder="Vpiši testno besedilo...">
+      <select>
+        <option>Izbira 1</option>
+        <option>Izbira 2</option>
+      </select>
+      <button>Navaden gumb</button>
+    </div>
+
+   <!-- Z uporabo PICO.CSS Navadna HTML tabela dobi sodoben videz -->
+   <h3>Preizkus tabele in gumbov za akcije</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Predmet</th>
+          <th>Cena</th>
+          <th>Akcije</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kalkulator Casio</td>
+          <td>15,00 €</td>
+          <td>
+            <!-- 5. PRAVILO: role="button" spremeni povezavo v gumb -->
+            <a href="#" role="button" class="secondary">Pogled</a>
+            <a href="#" role="button" class="contrast">Uredi</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+
+</html>
+
